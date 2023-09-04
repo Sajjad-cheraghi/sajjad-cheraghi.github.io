@@ -155,12 +155,14 @@ nav {
 
 nav>span {
     padding: .1rem 1rem;
+    display: inline-block;
     border-radius: 25px;
     background-color: rgb(255, 255, 255);
     color: rgb(94, 90, 102);
     cursor: pointer;
     filter: drop-shadow(1px 1px 10px rgba(38, 39, 39, 0.071));
-   
+   line-height: normal;
+   margin-bottom: 10px;
     transition: all .4s;
 }
 
@@ -169,10 +171,10 @@ nav>span:hover {
     background-color: rgb(79, 79, 79);
 }
 
-nav>span::after {
+/* nav>span::after {
     content: " >";
     color: rgb(126, 124, 124);
-}
+} */
 
 main {
     max-width: 1200px;
@@ -192,7 +194,7 @@ main {
     margin: 10px;
     text-decoration: none;
     display: inline-block;
-    height: auto;
+    max-height: auto;
     max-width: 250px;
     background-color: rgb(255, 255, 255);
     padding: .5rem;
@@ -215,6 +217,7 @@ main {
     color: rgb(56, 55, 55);
     font-size: small;
     font-weight: 600;
+    line-height: normal;
     padding: .2rem;
 }
 

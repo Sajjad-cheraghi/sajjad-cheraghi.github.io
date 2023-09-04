@@ -7,6 +7,7 @@
     <title>FXmotion</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" href="image/fav-logo.jpg">
+    <script src="js/data.js"></script>
     <script src="js/controll.js"></script>
 </head>
 
@@ -15,22 +16,22 @@
         <img class="logo" src="image/logo-1.svg" width="200px" alt="">
         <p class="logo">Computer Technique With FXmotion</p>
     </header>
-    <nav data-folder-id="0">
-        <span>Home</span>
-        <span>Tuts</span>
-        <span>programming</span>
-        <span>python</span>
+    <nav data-folder-id="0" id="cat-container">
+        <span class="category">Home</span>
+        <span class="category">Tuts</span>
+        <span class="category">programming</span>
+        <span class="category">python</span>
     </nav>
     <article class="page-content">
         <h2>آموزش پایتون</h2>
         <p>تمام آموزشهای مربوط به پایتون از اول تا اخر در اینجا خواهید آموخت</p>
     </article>
     
-    <main>
+    <main id="item-container">
 
-        <a class="card" href="#">
-            <img src="https://img.youtube.com/vi/LXBGfzXZ7BY/0.jpg" alt="">
-            <h3>آزمایشی 1</h3>
+        <a class="card" href="{{url}}">
+            <img src="{{image_url}}" alt="{{alt}}">
+            <h3>{{title}}</h3>
         </a>
         <a class="card" href="#">
             <img src="https://img.youtube.com/vi/LXBGfzXZ7BY/0.jpg" alt="">
