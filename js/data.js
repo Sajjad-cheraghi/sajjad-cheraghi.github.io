@@ -1,4 +1,4 @@
-const Data={
+var Data={
     "category":{
         "home":{
             "title":"",
