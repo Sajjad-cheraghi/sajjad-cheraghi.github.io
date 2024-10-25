@@ -1,60 +1,93 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FXmotion</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="icon" href="image/fav-logo.jpg">
-    <script src="js/data.js"></script>
-    <script src="js/controll.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- poppin + Pixelify font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@522&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <title>Sajjad Cheraghi | Portfolio</title>
+    <link rel="stylesheet" href="/style/colors.css">
+    <link rel="stylesheet" href="/style/fonts.css">
+    <link rel="stylesheet" href="/style/style.css">
+ 
+
+
+    <link rel="icon" href="/image/fav-logo.jpg">
+    <script src="/js/data.js"></script>
+    <script src="/js/controll.js"></script>
 </head>
 
-<body>
-    <header>
-        <img class="logo" src="image/logo-1.svg" width="200px" alt="">
-        <p class="logo">Computer Technique With FXmotion</p>
-    </header>
-    <nav data-folder-id="0" id="cat-container">
-        <span class="category">Home</span>
-        <span class="category">Tuts</span>
-        <span class="category">programming</span>
-        <span class="category">python</span>
-    </nav>
-    <article class="page-content">
-        <h2>آموزش پایتون</h2>
-        <p>تمام آموزشهای مربوط به پایتون از اول تا اخر در اینجا خواهید آموخت</p>
-    </article>
+<body class="background">
+    <div class="main-container">
+
+        <header>
     
-    <main id="item-container">
+            <nav class="pixelify top-nav st1" >
+       <a href="#projects">Projects</a>
+       <a href="#Linkedin" >Linkedin</a>
+       <a href="#contact">Contact</a>
+       <img src="/image/3lines.svg" height="28" style="width: auto;" alt="">
+            </nav>
+            <div class="line50"></div>
+            <div class="line30"></div>
 
-        <a class="card" href="{{url}}">
-            <img src="{{image_url}}" alt="{{alt}}">
-            <h3>{{title}}</h3>
-        </a>
-        <a class="card" href="#">
-            <img src="https://img.youtube.com/vi/LXBGfzXZ7BY/0.jpg" alt="">
-            <h3>آزمایشی 1</h3>
-        </a>
+        </header>
+        <div class="center padding1">
+            
+            <img width="120" src="/image/sajjad-cheraghi.png" alt="">
+            <h2 class="w80">Hey, I'm Sajjad Cheraghi</h2>
+            <p class="w80">Freelance Motion Designer working with great teams,
+                enhancing their brands and products from a motion perspective.</p>
 
-
-    </main>
-    <footer>
-        <img class="sajjad-picture" src="image/sajjad-cheraghi.jpg" width="100" alt="">
-        <p>سلام من سجاد چراغی هستم در افیکس موشن</p>
-        <p>اگر میخواهید در زمینه‌های تکنولوژی کامپیوتر پیشرفت کنید، اراده، برنامه‌ریزی، صبر و عدم مقایسه با دیگران، کلیدهایی هستند که همیشه باید همراهتون داشته باشید.
-
-        </p>
-        <div class="socials">
-            <a href=""><img src="image/insta.png" alt=""></a>
-            <a href=""><img src="image/telegram.png" alt=""></a>
-            <a href=""><img src="image/youtube.png" alt=""></a>
         </div>
-        <div class="copyrigth">
-            © All Rights Reserved By Sajjad Cheraghi - FXMotion.ir
+
+        <div class="center-row-flex">
+            <img src="/image/3lines-2.svg" height="28" alt="">
+            <small class="pixelify blue">And here it's my reel </small>
+            <img src="/image/3lines-2.svg" height="28" alt="">
         </div>
-    </footer>
+        
+        <div class="center padding1">
+            <img class="video-player" src="/image/video-play-placeholder.svg" alt="">
+        </div>
+      
+        <div class="divider center padding3">
+            <img src="/image/3lines-3.svg" height="60" alt="">
+        </div>
+        <div class="divider center padding3">
+            <img src="/image/3lines-4.svg" height="28" alt="">
+            <h2>I have created +400 Project During +14 years</h2>
+            <p>EliteAuthor & Bestseller and featured creator<br>
+                of Motion graphics on Envato market<br>
+                with Rank 49 of 9,000 authors<br>
+                2018-2019<br>
+            </p>
+            <img src="/image/ellite-badge.svg" height="80" alt="">
+        </div>
+
+
+
+
+        <main >
+    
+       
+    
+        </main>
+        <footer>
+    
+            <div class="copyrigth">
+                © All Rights Reserved By Sajjad Cheraghi | www.sajjad-cheraghi.ir
+            </div>
+        </footer>
+
+    </div>
+    
 
 </body>
 
