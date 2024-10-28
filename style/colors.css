@@ -1,11 +1,11 @@
 :root{
     --white1:#FFFFFF;
-    --blue:#2D84EB;
+    --blue1:#2D84EB;
     --black1:#000000;
     --grey1:#4D464D;
     --light1:#F4EFF4;
 }
 
 .blue{
-color: var(--blue);
+color: var(--blue1);
 }

@@ -1,12 +1,45 @@
+
+::-webkit-scrollbar {
+    width:.3rem;
+    left:90%;
+    height: .3rem;
+    background-color: var(--white1);
+    margin: 1rem!important
+    ;
+    padding: 1rem;
+    
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background:none;
+    border: solid 4px transparent;
+ 
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--black1);
+    
+border-radius: 2rem;
+
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--blue1);
+  }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all ease-in-out .5;
+    scroll-behavior: smooth;
 }
 
 .background {
     display: block;
-    height: 4000px;
     width: 100%;
     background-image: url(/image/background.svg);
     background-size: contain;
@@ -80,23 +113,140 @@ gap: .4rem;
     padding: 1rem 0;
 }
 .video-player{
+    width: 70%;
     cursor: pointer;
 transition: all ease-in-out .5s;
-animation: heartbeat 1.5s ease-in-out infinite;
+
 }
 .video-player:hover{
     scale: .97;
-    animation: heartbeat .4s infinite;
+    
 }
 
-@keyframes heartbeat {
-    0%, 100% {
-        transform: scale(1) ; 
+
+
+.my-projects{
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    border: .2rem solid var(--black1);
+    padding: .05rem .6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white1);
+}
+
+/* Discs Slides*/
+.projects-slide{
+    width: 50%;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: var(--light1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.my-projects-slider{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+flex-wrap: wrap;
+    justify-content: center;
+align-items: center;
+align-content: center;
+   
+    gap: 2rem;
+}
+.project{
+    cursor: pointer;
+    width: 250px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out .2s;
+    border: .2rem solid var(--black1);
+    background-color: var(--white1);
+    
+}
+.project:hover{
+    transform: scale(.95);
+    
+    background-color: var(--light1);
+    animation: smallbig ease-in-out 2s infinite;
+    
+}
+
+.project>.title{
+    padding: .2rem .8rem;
+    width: 100%;
+    border-bottom: .2rem solid var(--black1);
+
+}
+
+
+.project>.cover{
+    padding: 1rem;
+    
+}
+
+
+@keyframes smallbig {
+    0%,100% {transform: scale(1);
+
     }
-    25% {
-        transform: scale(1.01) ; 
-    }
-    50% {
-        transform: scale(1) ; 
+    50%{
+        transform: scale(.95);
     }
 }
+footer{
+    margin: 1rem 0;
+}
+.copyrigth{
+    text-align: center;
+    background-color: var(--light1);
+    padding: 0rem 1rem;
+    margin: 3rem 10rem;
+    border-radius: 3rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .video-player{
+        width: 100%;}
+    .copyrigth{
+        padding: 0rem 0rem;
+        margin: 3rem 0rem;
+    }
+    .copyrigth{
+        font-size: 1rem!important;
+    }
+    .padding3{
+        padding-left: 0;
+        padding-right:0 ;
+    }
+    .w80{
+        width: 100%;
+    }
+    .main-container{
+        width: calc(100%-2rem); 
+    }
+    .top-nav {
+        margin-top: 1rem;
+       
+        border: .2rem solid var(--black1);
+        padding: .5rem .5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--light1);
+    }
+    .top-nav img{
+        display: none;
+    }
+  }

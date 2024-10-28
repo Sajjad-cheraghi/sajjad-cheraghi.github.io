@@ -8,17 +8,21 @@
     <!-- poppin + Pixelify font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@522&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@522&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <title>Sajjad Cheraghi | Portfolio</title>
     <link rel="stylesheet" href="/style/colors.css">
     <link rel="stylesheet" href="/style/fonts.css">
     <link rel="stylesheet" href="/style/style.css">
- 
+    <link rel="stylesheet" href="/style/modal.css">
 
 
-    <link rel="icon" href="/image/fav-logo.jpg">
+
+    <link rel="icon" href="/image/favicon.png">
     <script src="/js/data.js"></script>
     <script src="/js/controll.js"></script>
 </head>
@@ -27,20 +31,20 @@
     <div class="main-container">
 
         <header>
-    
-            <nav class="pixelify top-nav st1" >
-       <a href="#projects">Projects</a>
-       <a href="#Linkedin" >Linkedin</a>
-       <a href="#contact">Contact</a>
-       <img src="/image/3lines.svg" height="28" style="width: auto;" alt="">
+
+            <nav class="pixelify top-nav st1">
+                <a href="#latest-project">Projects</a>
+                <a href="https://www.linkedin.com/in/sajjad-cheraghi/">Linkedin</a>
+                <a href="#contact" class="link" url="/projects/contact" title="Sajjad Cheraghi | Contact">Contact</a>
+                <img src="/image/3lines.svg" height="28" style="width: auto;" alt="">
             </nav>
             <div class="line50"></div>
             <div class="line30"></div>
 
         </header>
         <div class="center padding1">
-            
-            <img width="120" src="/image/sajjad-cheraghi.png" alt="">
+
+            <img width="200" src="/image/sajjad-cheraghi.png" alt="">
             <h2 class="w80">Hey, I'm Sajjad Cheraghi</h2>
             <p class="w80">Freelance Motion Designer working with great teams,
                 enhancing their brands and products from a motion perspective.</p>
@@ -52,17 +56,17 @@
             <small class="pixelify blue">And here it's my reel </small>
             <img src="/image/3lines-2.svg" height="28" alt="">
         </div>
-        
+
         <div class="center padding1">
-            <img class="video-player" src="/image/video-play-placeholder.svg" alt="">
+            <img  id="showrell" class="video-player link" url="/projects/showrell" title="Sajjad Cheraghi | Showrell"  src="/image/video-play-placeholder.svg" alt="">
         </div>
-      
+
         <div class="divider center padding3">
-            <img src="/image/3lines-3.svg" height="60" alt="">
+            <img src="/image/3lines-3.svg" height="80" alt="">
         </div>
         <div class="divider center padding3">
-            <img src="/image/3lines-4.svg" height="28" alt="">
-            <h2>I have created +400 Project During +14 years</h2>
+            <img src="/image/3lines-4.svg" height="28" style="width: 100%;" alt="">
+            <h2>I have created +600 Project During +14 years</h2>
             <p>EliteAuthor & Bestseller and featured creator<br>
                 of Motion graphics on Envato market<br>
                 with Rank 49 of 9,000 authors<br>
@@ -72,22 +76,90 @@
         </div>
 
 
+        <div id="latest-project" class="my-projects">
+            <img height="32" src="/image/xcross.svg" alt="">
+            <h2>3 Latest Projects</h2>
+            <img height="24" src="image/3lines.svg" alt="">
+        </div>
 
 
-        <main >
-    
+
+
+
+
+
+        <div class="my-projects-slider">
+
        
-    
+
+
+
+            <div class="project link" url="/projects/extensions" title="Extension">
+                <p class="title">Extension</p>
+                <img src="/projects/extensions/cover.jpg" alt=""  width="250" class="cover">
+            </div>
+
+            <div class="project link" url="/projects/explainer" title="Explainer Video">
+                <p class="title">Explainer Video</p>
+                <img src="/projects/explainer/cover.jpg" alt=""  width="250" class="cover">
+            </div>
+
+            <div class="project link" url="/projects/organization" title="Template Design">
+                <p class="title">Template Design</p>
+                <img src="/projects/organization/cover.jpg" alt=""  width="250" class="cover">
+            </div>
+
+           
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <!-- <a href="/all-projects" class="my-projects blue">
+            <h2>All Projects</h2>
+
+        </a> -->
+
+        <main>
+
+
+
         </main>
         <footer>
-    
-            <div class="copyrigth">
-                © All Rights Reserved By Sajjad Cheraghi | www.sajjad-cheraghi.ir
-            </div>
+            <img width="100%" src="/image/sajjad-footer.svg" alt="">
+
+            <nav class="pixelify top-nav st1" style="background-color: white!important;">
+                <a href="#latest-project">Projects</a>
+                <a href="https://www.linkedin.com/in/sajjad-cheraghi/">Linkedin</a>
+                <a href="#contact" class="link" url="/projects/contact" title="Sajjad Cheraghi | Contact">Contact</a>
+            </nav>
+
+            <p class="copyrigth pixelify">
+                Copyrights © All Rights Reserved
+            </p>
         </footer>
 
     </div>
-    
+
+
+
+    <div class="modal">
+        <div class="header">
+            <h2>Loading . . . </h2><img id="close-modal" width="40" src="/image/xcross.svg" style="cursor: pointer;" alt="">
+        </div>
+        <div class="modal-content">
+
+            Please Waite ! 
+        </div>
+
+
+    </div>
 
 </body>
 

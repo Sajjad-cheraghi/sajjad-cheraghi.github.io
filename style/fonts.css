@@ -113,11 +113,16 @@
     font-weight: 522;
     font-style: normal;
   }
+  *{
+    font-family: "Poppins", serif;
+  }
   a{
     text-decoration: none;
     color: var(--black1);
   }
-  a:hover{color: var(--grey1);}
+  a:hover{
+    color: var(--grey1);
+}
   h2{
     font-size: 2rem;
    font-family: "Poppins", serif;
