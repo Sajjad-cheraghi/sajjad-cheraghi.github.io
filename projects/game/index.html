@@ -1,214 +1,538 @@
+<div class="finteen-project">
 
-    
-    
+  <!-- Header -->
+  <div class="finteen-heading">
+    <img src="/image/3lines-2.svg" height="28" alt="">
+    <small class="pixelify">And here it's my reel</small>
+    <img src="/image/3lines-2.svg" height="28" alt="">
+  </div>
+
+
+  <!-- Project Title -->
+  <header class="finteen-title">
+    <h1>FinTeen Game</h1>
+
+    <img
+      src="/projects/game/banner.png"
+      alt="FinTeen game logo"
+      class="finteen-logo">
+  </header>
+
+
+  <!-- Main Reel -->
+  <div class="finteen-reel">
+    <iframe
+      title="FinTeen game reel"
+      src="https://player.vimeo.com/video/1107377545"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+
+  <!-- Project Description -->
+  <section class="finteen-description">
+
+    <h2>FinTeen – Gamified Financial Literacy for Teens</h2>
+
+    <p>
+      FinTeen is a personal project that I developed from concept to final
+      execution, combining storytelling, visual design, animation, and
+      interactive game development into a single experience.
+    </p>
+
+    <p>
+      I was responsible for the entire creative and visual production,
+      including:
+    </p>
+
+    <ul>
+      <li>
+        <strong>Concept Development</strong> — defining the visual direction,
+        game concept, and overall experience.
+      </li>
+
+      <li>
+        <strong>Character Design</strong> — designing the characters and
+        establishing their visual identity.
+      </li>
+
+      <li>
+        <strong>Storyboarding</strong> — planning scenes, interactions,
+        and visual storytelling.
+      </li>
+
+      <li>
+        <strong>3D Modeling & Materials</strong> — creating and preparing
+        3D assets, models, and materials.
+      </li>
+
+      <li>
+        <strong>Animation</strong> — bringing characters, assets, and scenes
+        to life through animation.
+      </li>
+
+      <li>
+        <strong>UI & Graphic Design</strong> — designing the user interface,
+        visual elements, and graphic assets.
+      </li>
+
+      <li>
+        <strong>Game Development & Integration</strong> — bringing the project
+        together and implementing the interactive experience in Unity.
+      </li>
+    </ul>
+
+    <p>
+      The project was created using
+      <strong>Unity, Cinema 4D, Illustrator, and Photoshop</strong>,
+      with the complete visual pipeline developed and executed by me.
+    </p>
+
+    <p>
+      From the initial concept and character design to modeling, materials,
+      animation, UI, and final implementation, FinTeen was built as an
+      end-to-end personal project to explore how visual storytelling and
+      game design can create an engaging learning experience for younger
+      audiences.
+    </p>
+
+    <p class="finteen-highlight">
+      <strong>
+        Concept. Design. Story. Animation. Development —
+        created by me from start to finish.
+      </strong>
+    </p>
+
+  </section>
+
+
+  <!-- Website / Game Visual -->
+  <section class="finteen-stack">
+
+    <img
+      src="/projects/game/top.png"
+      alt="FinTeen top section"
+      class="stack-top">
+
+    <a
+      href="#"
+      download
+      class="stack-middle-link">
+
+      <img
+        src="/projects/game/center.png"
+        alt="FinTeen center section"
+        class="stack-middle">
+
+    </a>
+
+    <div class="finteen-pblock">
+      <h3>
+        YOUR MONEY. YOUR GAME. YOUR FUTURE.
+      </h3>
+    </div>
+
+    <img
+      src="/projects/game/footer.png"
+      alt="FinTeen footer"
+      class="stack-footer">
+
+  </section>
+
+
+  <!-- Note -->
+  <p class="finteen-note">
+    <small>
+      Also, the website graphic design was done by me. 😉
+    </small>
+  </p>
+
+
+  <!-- Footer -->
+  <div class="finteen-footer">
+    <img src="/image/3lines-4.svg" height="20" alt="">
+    <small class="pixelify">- Thanks For Watching -</small>
+  </div>
+
+</div>
+
+
 <style>
-.showrell-div{
+
+  /* =================================
+     Main Container
+  ================================= */
+
+  .finteen-project {
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 35px;
+  }
+
+
+  /* =================================
+     Header
+  ================================= */
+
+  .finteen-heading {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+  }
+
+  .finteen-heading small {
+    white-space: nowrap;
+  }
+
+
+  /* =================================
+     Title
+  ================================= */
+
+  .finteen-title {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-}
-iframe,video{
-    border: .2rem solid var(--black1);
-}
+
+    gap: 20px;
+
+    text-align: center;
+  }
+
+  .finteen-title h1 {
+    margin: 0;
+
+    font-family: "Fredoka", sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    text-transform: capitalize;
+  }
+
+  .finteen-logo {
+    width: min(280px, 65%);
+    height: auto;
+    display: block;
+  }
+
+
+  /* =================================
+     Main Reel
+  ================================= */
+
+  .finteen-reel {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .finteen-reel iframe {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border: 3px solid var(--black1);
+    box-sizing: border-box;
+  }
+
+
+  /* =================================
+     Description
+  ================================= */
+
+  .finteen-description {
+    width: 100%;
+    padding: 10px 15px;
+
+    box-sizing: border-box;
+
+    font-family: "Fredoka", sans-serif;
+  }
+
+  .finteen-description h2 {
+    margin: 0 0 25px;
+
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.3;
+  }
+
+  .finteen-description p {
+    margin: 0 0 20px;
+
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  .finteen-description ul {
+    margin: 25px 0;
+    padding-left: 25px;
+  }
+
+  .finteen-description li {
+    margin-bottom: 15px;
+
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+
+  .finteen-highlight {
+    margin-top: 30px !important;
+    padding: 20px 25px;
+
+    color: #6A57FF;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 25px;
+
+    box-shadow:
+      0 0 25px rgba(255, 255, 255, 0.8),
+      0 0 50px rgba(255, 255, 255, 0.5);
+  }
+
+
+  /* =================================
+     Image Stack
+  ================================= */
+
+  .finteen-stack {
+    width: 100%;
+    max-width: 750px;
+
+    margin: 20px auto 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+  }
+
+  .finteen-stack > img,
+  .stack-middle-link {
+    width: 100%;
+    display: block;
+  }
+
+  .stack-top,
+  .stack-footer {
+    height: auto;
+  }
+
+
+  /* =================================
+     Middle Image
+  ================================= */
+
+  .stack-middle-link {
+    position: relative;
+    z-index: 3;
+
+    margin-top: -20%;
+
+    text-decoration: none;
+
+    animation: finteen-pulse 2s ease-in-out infinite;
+  }
+
+  .stack-middle {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    cursor: pointer;
+
+    transition:
+      transform 0.4s ease,
+      opacity 0.4s ease;
+  }
+
+  .stack-middle:hover {
+    opacity: 0.9;
+    transform: scale(1.015);
+  }
+
+
+  /* =================================
+     Text Between Images
+  ================================= */
+
+  .finteen-pblock {
+    width: 70%;
+
+    margin: 35px 0;
+
+    padding: 14px 20px;
+
+    box-sizing: border-box;
+
+    color: #6A57FF;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.45);
+
+    border-radius: 50px;
+
+    filter:
+      drop-shadow(0 0 20px rgba(255, 255, 255, 0.9))
+      drop-shadow(0 0 30px rgba(255, 255, 255, 0.7));
+
+    position: relative;
+    z-index: 2;
+  }
+
+  .finteen-pblock h3 {
+    margin: 0;
+
+    font-size: clamp(0.9rem, 2vw, 1.3rem);
+    line-height: 1.4;
+  }
+
+
+  /* =================================
+     Footer Image
+  ================================= */
+
+  .stack-footer {
+    position: relative;
+    z-index: 1;
+
+    margin-top: -10%;
+  }
+
+
+  /* =================================
+     Note
+  ================================= */
+
+  .finteen-note {
+    margin: 0;
+
+    text-align: center;
+
+    font-family: "Fredoka", sans-serif;
+    opacity: 0.8;
+  }
+
+
+  /* =================================
+     Footer
+  ================================= */
+
+  .finteen-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 10px;
+  }
+
+
+  /* =================================
+     Animation
+  ================================= */
+
+  @keyframes finteen-pulse {
+
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.02);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+
+  }
+
+
+  /* =================================
+     Mobile
+  ================================= */
+
+  @media (max-width: 600px) {
+
+    .finteen-project {
+      padding: 15px;
+      gap: 25px;
+    }
+
+    .finteen-heading {
+      gap: 8px;
+    }
+
+    .finteen-heading img {
+      height: 20px;
+    }
+
+    .finteen-description {
+      padding: 5px;
+    }
+
+    .finteen-description p,
+    .finteen-description li {
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .finteen-description ul {
+      padding-left: 20px;
+    }
+
+    .finteen-pblock {
+      width: 85%;
+      margin: 25px 0;
+      padding: 12px 15px;
+    }
+
+  }
+
+
+  /* =================================
+     Small Mobile
+  ================================= */
+
+  @media (max-width: 400px) {
+
+    .finteen-title h1 {
+      font-size: 2rem;
+    }
+
+    .finteen-logo {
+      width: 75%;
+    }
+
+    .finteen-pblock {
+      width: 90%;
+    }
+
+  }
+
 </style>
-<div class="showrell-div">
-    <div class="center-row-flex">
-        <img src="/image/3lines-2.svg" height="28" alt="">
-        <small class="pixelify">And here it's my reel </small>
-        <img src="/image/3lines-2.svg" height="28" alt="">
-    </div>
-
- <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
-    *{
-       font-family: "Fredoka", sans-serif;
-    }
-    body {
-      margin: 0;
-      padding: 20px;
-      font-family: sans-serif;
-      background-color: #f0f0f0;
-    }
-
-    .image-stack {
-      max-width: 750px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-    }
-
-    .image-stack img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      display: block;
-      transition: all .5s ease;
-      
-    }
-    .footer{
-      margin-top: -10%; /* overlap */
-    }
-    .image-stack .middle {
-      margin-top: -20%; /* overlap */
-      z-index: 2;
-      cursor: pointer;
-      animation: pulse 2s ease-in-out infinite;
-      
-    }
-
-    .image-stack .middle:hover {
-
-      
-     
-      transition: all 1s ease;
-      opacity: .9;
-    }
-    
-.pblock{
-  display: block;
-  width: 70%;
-  padding: 10px;
-  background-color: #ffffff71;
-  font-weight: 700;
-  color: #6A57FF;
-text-align: center;
-margin: 3rem 0;
-border-radius: 50px;;
-filter: drop-shadow(0 0 35px #ffffff)drop-shadow(0 0 35px #ffffff)drop-shadow(0 0 35px #ffffff);
-z-index: -10;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.02); /* بزرگ‌تر شدن */
-  }
-  100% {
-    transform: scale(1); /* بازگشت به حالت اولیه */
-  }
-}
-  </style>
-
-<h1>finteen game</h1>
-<img src="/projects/game/banner.png" width="30%" alt=" finteen game logo">
-    
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1107377545" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
-<h2>FinTeen – Gamified Financial Literacy for Teens</h2>
-  <section class="project-description">
-  <h2>FinTeen — Gamified Financial Literacy for Teens</h2>
-
-  <p>
-    FinTeen is a personal project that I developed from concept to final
-    execution, combining storytelling, visual design, animation, and
-    interactive game development into a single experience.
-  </p>
-
-  <p>
-    I was responsible for the entire creative and visual production,
-    including:
-  </p>
-
-  <ul>
-    <li>
-      <strong>Concept Development</strong> — defining the visual direction,
-      game concept, and overall experience.
-    </li>
-
-    <li>
-      <strong>Character Design</strong> — designing the characters and
-      establishing their visual identity.
-    </li>
-
-    <li>
-      <strong>Storyboarding</strong> — planning scenes, interactions,
-      and visual storytelling.
-    </li>
-
-    <li>
-      <strong>3D Modeling & Materials</strong> — creating and preparing
-      3D assets, models, and materials.
-    </li>
-
-    <li>
-      <strong>Animation</strong> — bringing characters, assets, and scenes
-      to life through animation.
-    </li>
-
-    <li>
-      <strong>UI & Graphic Design</strong> — designing the user interface,
-      visual elements, and graphic assets.
-    </li>
-
-    <li>
-      <strong>Game Development & Integration</strong> — bringing the project
-      together and implementing the interactive experience in Unity.
-    </li>
-  </ul>
-
-  <p>
-    The project was created using
-    <strong>Unity, Cinema 4D, Illustrator, and Photoshop</strong>,
-    with the complete visual pipeline developed and executed by me.
-  </p>
-
-  <p>
-    From the initial concept and character design to modeling, materials,
-    animation, UI, and final implementation, FinTeen was built as an
-    end-to-end personal project to explore how visual storytelling and
-    game design can create an engaging learning experience for younger
-    audiences.
-  </p>
-
-  <p class="project-highlight">
-    <strong>
-      Concept. Design. Story. Animation. Development —
-      created by me from start to finish.
-    </strong>
-  </p>
-</section>
-
-<br>
-<br>
-<br>
-
-    <div class="image-stack">
-    <img src="/projects/game/top.png" alt="FINTEEN" style="border-radius: 25px;">
-    
-    <a href="#" download>
-      <img src="/projects/game/center.png" alt="FINTEEN" class="middle">
-    </a>
-    <div class="pblock">
-    <h3>
-      YOUR MONEY. YOUR GAME. YOUR FUTURE.
-    </h3>
-    </div>
-    <img src="/projects/game/footer.png" class="footer" alt="FINTEEN">
-  </div>
 
 
-
-
-  <p><small>also the website graphic design were done by me.😉</small></p>
-
-
-
-
-
-  
-    <img src="/image/3lines-4.svg" height="20" alt="">
-    <small class="pixelify">- Thanks For Watching - </small>
-</div>
-
-
-
-
-
-    
-
+<!-- Fredoka Font -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+</style>
