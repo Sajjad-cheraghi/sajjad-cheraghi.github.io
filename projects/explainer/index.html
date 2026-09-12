@@ -72,21 +72,19 @@ iframe,video{
         .cards-section {
             width: 100%;
             padding: 70px 5%;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            display: flex;
             gap: 25px;
             background: #f5f5f3;
         }
 
         .card {
-            overflow: hidden;
-            border-radius: 12px;
-            aspect-ratio: 9 / 16;
+            width: 32%;
+            padding: 10px;
             cursor: pointer;
             background: #ddd;
         }
 
-        .card img {
+        img {
             width: 100%;
             object-fit: contain;
             transition:
@@ -94,7 +92,7 @@ iframe,video{
                 filter 0.5s ease;
         }
 
-        .card:hover img {
+        .card:hover {
             transform: scale(1.07);
             filter: brightness(0.9);
         }
@@ -114,6 +112,7 @@ iframe,video{
         .video-wrapper video {
             width: 70%;
             height: auto;
+            margin: auto;
            
         }
 img{
@@ -173,10 +172,6 @@ img{
     </section>
 
 
-  
-    <section class="full-image max736">
-        <img src="/projects/explainer/02.png" alt="explainer">
-    </section>
 
 
     
