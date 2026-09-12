@@ -39,6 +39,195 @@ iframe,video{
 
 </section>
 
+<section>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f5f5f3;
+            color: #111;
+            font-family: Arial, sans-serif;
+        }
+
+        /* تصاویر تمام عرض */
+        .full-image {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .full-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* بخش سه کارت */
+        .cards-section {
+            width: 100%;
+            padding: 70px 5%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            background: #f5f5f3;
+        }
+
+        .card {
+            overflow: hidden;
+            border-radius: 12px;
+            aspect-ratio: 4 / 5;
+            cursor: pointer;
+            background: #ddd;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+
+            transition:
+                transform 0.5s ease,
+                filter 0.5s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.07);
+            filter: brightness(0.9);
+        }
+
+        /* ویدئو */
+        .video-section {
+            width: 100%;
+            padding: 100px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f5f5f3;
+        }
+
+        .video-wrapper {
+            width: 40%;
+            overflow: hidden;
+            border-radius: 14px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+img{
+  border-radius: 28px;
+}
+        /* موبایل */
+        @media (max-width: 768px) {
+
+            .full-image {
+                height: 60vh;
+            }
+
+            .cards-section {
+                grid-template-columns: 1fr;
+                padding: 40px 6%;
+                gap: 18px;
+            }
+
+            .card {
+                aspect-ratio: 16 / 11;
+            }
+
+            .video-section {
+                padding: 60px 20px;
+            }
+
+            .video-wrapper {
+                width: 90%;
+            }
+        }
+    </style>
+
+
+
+
+    <!-- تصویر اول -->
+    <section class="full-image">
+        <img src="/project/explainer/character.jpg" alt="تصویر اصلی">
+    </section>
+
+
+    <!-- سه کارت -->
+    <section class="cards-section">
+
+        <div class="card">
+            <img src="/project/explainer/01.jpg" alt="تصویر اول">
+        </div>
+
+        <div class="card">
+            <img src="/project/explainer/02.jpg" alt="تصویر دوم">
+        </div>
+
+        <div class="card">
+            <img src="/project/explainer/03.jpg" alt="تصویر سوم">
+        </div>
+
+    </section>
+
+
+  
+    <section class="full-image">
+        <img src="/project/explainer/02.png" alt="تصویر دوم">
+    </section>
+
+
+    
+    <section class="video-section">
+
+        <div class="video-wrapper">
+            <video controls autoplay loop>
+                <source src="/project/explainer/walk.mp4" type="video/mp4">
+               not supported video
+            </video>
+        </div>
+
+    </section>
+  
+    <section class="full-image">
+        <img src="/project/explainer/01.png" alt="تصویر دوم">
+    </section>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <img src="/image/3lines-4.svg" height="20" alt="">
     <small class="pixelify">- Thanks For Watching - </small>
