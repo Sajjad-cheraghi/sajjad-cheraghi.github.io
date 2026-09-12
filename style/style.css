@@ -104,6 +104,9 @@ gap: .4rem;
     width: 80%;
 
 }
+.max736{
+    max-width: 736px;
+}
 .center-row-flex{
     display: flex;
     flex-direction: row;
