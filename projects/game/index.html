@@ -21,6 +21,83 @@ iframe,video{
         <img src="/image/3lines-2.svg" height="28" alt="">
     </div>
 
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+    *{
+       font-family: "Fredoka", sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .image-stack {
+      max-width: 750px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .image-stack img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      transition: all .5s ease;
+      
+    }
+    .footer{
+      margin-top: -10%; /* overlap */
+    }
+    .image-stack .middle {
+      margin-top: -20%; /* overlap */
+      z-index: 2;
+      cursor: pointer;
+      animation: pulse 2s ease-in-out infinite;
+      
+    }
+
+    .image-stack .middle:hover {
+
+      
+     
+      transition: all 1s ease;
+      opacity: .9;
+    }
+    
+.pblock{
+  display: block;
+  width: 70%;
+  padding: 10px;
+  background-color: #ffffff71;
+  font-weight: 700;
+  color: #6A57FF;
+text-align: center;
+margin: 3rem 0;
+border-radius: 50px;;
+filter: drop-shadow(0 0 35px #ffffff)drop-shadow(0 0 35px #ffffff)drop-shadow(0 0 35px #ffffff);
+z-index: -10;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02); /* بزرگ‌تر شدن */
+  }
+  100% {
+    transform: scale(1); /* بازگشت به حالت اولیه */
+  }
+}
+  </style>
+
+<h1>finteen game</h1>
+<img src="/project/game/banner.png" width="30%" alt=" finteen game logo">
     
     <iframe title="vimeo-player" src="https://player.vimeo.com/video/1107377545" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
 <h2>FinTeen – Gamified Financial Literacy for Teens</h2>
@@ -35,14 +112,41 @@ iframe,video{
     <p>FinTeen aims to empower the next generation with practical money skills from an early age, while offering long-term scalability and potential for partnerships with banks, educational institutions, and sponsors.</p>
   
     <p><em>Play smart. Grow wise.</em></p>
-      <a href="https://Finteen.io/" target="_blank" style="display: inline-block; margin-top: 1em; padding: 0.75em 1.5em; background-color: #0073e6; color: #fff; text-decoration: none; border-radius: 4px;">
-    Watch on Finteen.io
-  </a>
+
+<br>
+<br>
+<br>
+
+    <div class="image-stack">
+    <img src="/project/game/top.png" alt="FINTEEN" style="border-radius: 25px;">
+    
+    <a href="#" download>
+      <img src="/project/game/center.png" alt="FINTEEN" class="middle">
+    </a>
+    <div class="pblock">
+    <h3>
+      YOUR MONEY. YOUR GAME. YOUR FUTURE.
+    </h3>
+    </div>
+    <img src="/project/game/footer.png" class="footer" alt="FINTEEN">
+  </div>
+
+
+
+
   <p><small>also the website graphic design were done by me.😉</small></p>
 
+
+
+
+
+  
     <img src="/image/3lines-4.svg" height="20" alt="">
     <small class="pixelify">- Thanks For Watching - </small>
 </div>
+
+
+
 
 
     
