@@ -43,11 +43,7 @@ iframe,video{
 
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+
 
         body {
             background: #f5f5f3;
@@ -78,10 +74,12 @@ iframe,video{
         }
 
         .card {
+          border-radius: 30px;
             width: 32%;
             padding: 10px;
             cursor: pointer;
-            background: #ddd;
+            background: #ffffff;
+            box-shadow: 0 0 10px 0 0 #11111134;
         }
 
         img {
@@ -100,11 +98,10 @@ iframe,video{
         /* ویدئو */
         .video-section {
             width: 100%;
-            padding: 100px 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #f5f5f3;
+            
         }
 
 
@@ -177,9 +174,9 @@ img{
     
     <section class="video-section max736">
 
-        <div class="video-wrapper">
+        
             <video src="/projects/explainer/walk.mp4" controls autoplay loop></video>
-        </div>
+       
 
     </section>
   
